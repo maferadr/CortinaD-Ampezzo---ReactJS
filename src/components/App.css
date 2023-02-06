@@ -1,0 +1,38 @@
+.fs-4{
+    font-family: 'DM Serif Display', serif;    
+    font-size: 40px;
+    color: rgb(64, 11, 11);
+}
+
+.nav-item{
+    padding-right: 1rem;
+}
+
+.col-auto{
+    align-items: center;
+    position: relative;
+    width: 44rem;
+    height: 37rem;
+    margin: 0;
+}
+
+.col-md-6{
+    width: 45%;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+.flex-column{
+    justify-content: center;
+    text-align: center;
+    height: 80%;
+}
+
+.card{
+    text-align: center;
+}
+
+button{
+    align-items: center;
+    justify-content: center;
+}

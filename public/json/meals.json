@@ -1,0 +1,267 @@
+[
+    {
+        "id": 1,
+        "idCategoria": 1,
+        "nombre": "Garlic and Olive Oil",
+        "menuType": "Classic Pastas",
+        "precio": 16.99,
+        "stock": 30,
+        "img": "Garlic-Olive.jpg",
+        "ingredients": "Choice of Pasta to your preference with our mouthwatering sauteed garlic and glaze with Olive Oil"
+    },
+
+    {
+        "id": 2,
+        "idCategoria": 1,
+        "nombre": "Bolognese",
+        "menuType": "Classic Pastas",
+        "precio": 17.99,
+        "stock": 25,
+        "img": "pasta-bolognese.jpg",
+        "ingredients": "Choice of Pasta to your preference with our homemade creamy Bolognese sauce based of a pleasant milk base"
+    },
+
+    {
+        "id": 3,
+        "idCategoria": 1,
+        "nombre": "MeatSauce",
+        "menuType": "Classic Pastas",
+        "precio": 17.99,
+        "stock": 25,
+        "img": "Pasta-meatsauce.jpg",
+        "ingredients": "Choice of Pasta to your preference mixed with our special Groundbeef on top of sauteed Onions, Shallots and Green Peppers"
+    },
+
+    {
+        "id": 4,
+        "idCategoria": 1,
+        "nombre": "Pasta with Marinara",
+        "menuType": "Classic Pastas",
+        "precio": 16.99,
+        "stock": 30,
+        "img": "marinara.jpg",
+        "ingredients": "Such a Typical Italian Meal can't be missing! Try our homemade Marinara sauce with the Choice of Pasta to your Preference!"
+    },
+
+    {
+        "id": 5,
+        "idCategoria": 2,
+        "nombre": "Fettuccine Alfredo",
+        "menuType": "Tour of Italy",
+        "precio": 18.99,
+        "stock": 40,
+        "img": "Fettuccine-Alfredo-2.jpg",
+        "ingredients": "Fettuccine Pasta with our Creamy Alfredo Sauce!"
+    },
+
+    {
+        "id": 6,
+        "idCategoria": 2,
+        "nombre": "Fettuccine Carbonara",
+        "menuType": "Tour of Italy",
+        "precio": 20.99,
+        "stock": 40,
+        "img": "Fettuccine-Carb.jpg",
+        "ingredients": "Sauteed onions in our Creamy bechamel sauce mixed with bacon over Fettuccine Pasta."
+    },
+
+    {
+        "id": 7,
+        "idCategoria": 2,
+        "nombre": "Baked Rigatoni",
+        "menuType": "Tour of Italy",
+        "precio": 22.99,
+        "stock": 35,
+        "img": "Baked-rigatoni.jpg",
+        "ingredients": "Rigatoni with Meatsauce topped with fresh mozzarella cheese baked in the Oven"
+    },
+
+    {
+        "id": 8,
+        "idCategoria": 2,
+        "nombre": "D'Ampezzo Specialty",
+        "menuType": "Tour of Italy",
+        "precio": 23.50,
+        "stock": 40,
+        "img": "specialty-homemade.jpg",
+        "ingredients": "Sausage sauteed in Olive Oil, bell peppers and onions in marinara sauce with Rigatoni and topped with melted mozarella cheese."
+    },
+
+    {
+        "id": 9,
+        "idCategoria": 2,
+        "nombre": "Pasta Alla Vodka",
+        "menuType": "Tour of Italy",
+        "precio": 20.99,
+        "stock": 40,
+        "img": "Pasta-AllaVodka.jpg",
+        "ingredients": "Sauteed shallots flamed with vodka in a creamy pink sauce. Served with the choice of pasta of your preference."
+
+    },
+
+    {
+        "id": 10,
+        "idCategoria": 3,
+        "nombre": "Pork Osso Bucco",
+        "menuType": "Grilled Specialties",
+        "precio": 34.99,
+        "stock": 37,
+        "img": "pork-osso-bucco.jpg",
+        "ingredients": "Slow braised Pork Osso Bucco served over truffle mushroom risotto"
+    },
+
+    {
+        "id": 11,
+        "idCategoria": 3,
+        "nombre": "Grilled Salmon",
+        "menuType": "Grilled Specialties",
+        "precio": 37.99,
+        "stock": 42,
+        "img": "Salmon-grill.jpg",
+        "ingredients": "Fresh salmon delicately grill with herbs and extra virgin olive oil. Served over dill sauce."
+    },
+
+    {
+        "id": 12,
+        "idCategoria": 3,
+        "nombre": "Strips of Sirloin (12oz)",
+        "menuType": "Grilled Specialties",
+        "precio": 30.50,
+        "stock": 37,
+        "img": "strips-of-sirloin.jpg",
+        "ingredients": "A thick cut of mouthwatering steak cooked to perfection. Served with Roasted Potatoes and Mixed Vegetables."
+    },
+
+    {
+        "id": 13,
+        "idCategoria": 4,
+        "nombre": "Spicy Shrimp Rigatoni",
+        "menuType": "Seafood Cuisine",
+        "precio": 32.99,
+        "stock": 45,
+        "img": "Spicy-shrimp-rigatoni.jpg",
+        "ingredients": "Sauteed shrimp served with rigatoni in a roasted pepper sauce with a hint of spice and herbs."
+    },
+
+    {
+        "id": 14,
+        "idCategoria": 4,
+        "nombre": "Frutti Di Mare",
+        "menuType": "Seafood Cuisine",
+        "precio": 35.99,
+        "stock": 40,
+        "img": "frutti-di-mare.jpg",
+        "ingredients": "Sauteed shrimp, clams, calamari, mussels in a fresh garlic lemon-butter-sauce or Red sauce. Served over spaghetti."
+    },
+
+    {
+        "id": 15,
+        "idCategoria": 4,
+        "nombre": "Shrimp and Salmon Risotto",
+        "menuType": "Seafood Cuisine",
+        "precio": 36.99,
+        "stock": 45,
+        "img": "shrimp-risotto.jpg",
+        "ingredients": "Sauteed shrimp and salmon with our special white wine sauce and a glaze of aged balsamic."
+    },
+
+    {
+        "id": 16,
+        "idCategoria": 4,
+        "nombre": "Spaghetti Alla Vongole",
+        "menuType": "Seafood Cuisine",
+        "precio": 32.99,
+        "stock": 30,
+        "img": "spa-alla-Vongole.jpg",
+        "ingredients": "Clams sauteed in extra virgin olive oil and garlic, finished with our white wine sauce."
+    },
+
+    {
+        "id": 17,
+        "idCategoria": 5,
+        "nombre": "Fettuccine Alfredo",
+        "menuType": "Kids Meals",
+        "precio": 15.99,
+        "stock": 22,
+        "img": "Fettuccine-Alfredo-2.jpg",
+        "ingredients": "Fettuccine Pasta with our Creamy Alfredo Sauce!"
+    },
+
+    {
+        "id": 18,
+        "idCategoria": 5,
+        "nombre": "Spaghetti and Meatballs",
+        "menuType": "Kids Meals",
+        "precio": 12.99,
+        "stock": 22,
+        "img": "kids-mb.jpg",
+        "ingredients": "Such a Typical Italian Meal can't be missing! Try our homemade Marinara sauce with Meatballs on it."
+    },
+
+    {
+        "id": 19,
+        "idCategoria": 5,
+        "nombre": "Chicken Fingers and Fries",
+        "menuType": "Kids Meals",
+        "precio": 12.99,
+        "stock": 27,
+        "img": "chx-fries-kids.jpg",
+        "ingredients": "Fried chicken fingers served with french fries. Kids size"
+    },
+
+    {
+        "id": 20,
+        "idCategoria": 6,
+        "nombre": "Cannoli",
+        "menuType": "Desserts",
+        "precio": 10.99,
+        "stock": 15,
+        "img": "cannoli.jpg",
+        "ingredients": "Stuffed crunchy cannoli with our homemade whipped cream glaze with chocolate Syrup"
+    },
+
+    {
+        "id": 21,
+        "idCategoria": 6,
+        "nombre": "Creme Brulee",
+        "menuType": "Desserts",
+        "precio": 10.99,
+        "stock": 15,
+        "img": "creme-brulee.jpg",
+        "ingredients": "Custard topped with caramelized sugar."
+    },
+
+    {
+        "id": 22,
+        "idCategoria": 6,
+        "nombre": "Chocolate MouseCake",
+        "menuType": "Desserts",
+        "precio": 12.99,
+        "stock": 15,
+        "img": "chocolate-mousecake.jpg",
+        "ingredients": "For all of our chocolate lovers! Try our homemade Triple Chocolate Mousecake"
+    },
+
+    {
+        "id": 23,
+        "idCategoria": 6,
+        "nombre": "Tiramisu",
+        "menuType": "Desserts",
+        "precio": 10.99,
+        "stock": 15,
+        "img": "tiramisu.jpg",
+        "ingredients": "Layers of sponge cake soaked in coffee and brandy or liqueur with powdered chocolate and mascarpone cheese"
+    },
+
+    {
+        "id": 24,
+        "idCategoria": 6,
+        "nombre": "Cheesecake",
+        "menuType": "Desserts",
+        "precio": 10.99,
+        "stock": 15,
+        "img": "cheesecake.jpg",
+        "ingredients": "Rich dessert cake made with cream and soft cheese on a graham cracker, cookie, or pastry crust, typically topped with a fruit sauce."
+    }
+
+]
