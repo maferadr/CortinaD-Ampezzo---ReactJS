@@ -1,10 +1,23 @@
 import { useState, useEffect} from "react"
+import { useParams } from "react-router-dom"
 import { ItemList } from "../ItemList/ItemList"
 
 export const ItemListContainer = () =>{
     const [meals, setMeals] = useState([])
+    const {idCategoria}=(useParams)
+
     useEffect(() =>{
-        fetch('./json/meals.json')
+        if (idCategoria){
+            fetch('../json/meals.json')
+            .then(response => response.json())
+            .then(items =>{
+                const menu = items.filter(men => men.idCategoria === parseInt(idCategoria))
+                const menuList = ItemList({menu})
+                console.log(menuList)
+                setMeals(menuList)
+        })
+        }else{
+            fetch('./json/meals.json')
         .then(response => response.json())
         .then(menu =>{
             console.log(menu)
@@ -12,7 +25,9 @@ export const ItemListContainer = () =>{
             console.log(menuList)
             setMeals(menuList)
         })
-    }, [])
+        }
+        
+    }, [idCategoria])
 
 return (
 <>
