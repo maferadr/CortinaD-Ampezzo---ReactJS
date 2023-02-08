@@ -5,7 +5,7 @@ import { ItemDetail } from "../ItemDetail/ItemDetail"
 export const ItemDetailContainer = () =>{
 
     const [meals, setMeals] = useState([])
-    const {id} = (useParams)
+    const {id} = useParams()
 
     useEffect(() =>{
         fetch('../json/meals.json')

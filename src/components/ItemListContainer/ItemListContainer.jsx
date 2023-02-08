@@ -4,7 +4,7 @@ import { ItemList } from "../ItemList/ItemList"
 
 export const ItemListContainer = () =>{
     const [meals, setMeals] = useState([])
-    const {idCategoria}=(useParams)
+    const {idCategoria}= useParams()
 
     useEffect(() =>{
         if (idCategoria){
@@ -18,8 +18,8 @@ export const ItemListContainer = () =>{
         })
         }else{
             fetch('./json/meals.json')
-        .then(response => response.json())
-        .then(menu =>{
+            .then(response => response.json())
+            .then(menu =>{
             console.log(menu)
             const menuList = ItemList({menu})
             console.log(menuList)
