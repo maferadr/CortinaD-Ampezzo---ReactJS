@@ -1,6 +1,7 @@
 import { useState, useEffect} from "react"
 import { useParams } from "react-router-dom"
 import { ItemList } from "../ItemList/ItemList"
+import { Header } from "../Item/Header"
 
 export const ItemListContainer = () =>{
     const [meals, setMeals] = useState([])
@@ -32,6 +33,12 @@ export const ItemListContainer = () =>{
 return (
 <>
     <main>
+
+    <header className="py-5 border-bottom">
+       <Header menu={meals}/>
+    </header>
+    
+   
     <div className="album bg-light">
         <div className="container">
         <div className="row cardProducto row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

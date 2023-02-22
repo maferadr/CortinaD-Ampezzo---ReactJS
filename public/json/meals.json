@@ -7,7 +7,8 @@
         "precio": 16.99,
         "stock": 30,
         "img": "Garlic-Olive.jpg",
-        "ingredients": "Choice of Pasta to your preference with our mouthwatering sauteed garlic and glaze with Olive Oil"
+        "ingredients": "Choice of Pasta to your preference with our mouthwatering sauteed garlic and glaze with Olive Oil",
+        "cover": "Classic-cover.png"
     },
 
     {
@@ -18,7 +19,8 @@
         "precio": 17.99,
         "stock": 25,
         "img": "pasta-bolognese.jpg",
-        "ingredients": "Choice of Pasta to your preference with our homemade creamy Bolognese sauce based of a pleasant milk base"
+        "ingredients": "Choice of Pasta to your preference with our homemade creamy Bolognese sauce based of a pleasant milk base",
+        "cover": "Classic-cover.png"
     },
 
     {
@@ -29,7 +31,8 @@
         "precio": 17.99,
         "stock": 25,
         "img": "Pasta-meatsauce.jpg",
-        "ingredients": "Choice of Pasta to your preference mixed with our special Groundbeef on top of sauteed Onions, Shallots and Green Peppers"
+        "ingredients": "Choice of Pasta to your preference mixed with our special Groundbeef on top of sauteed Onions, Shallots and Green Peppers",
+        "cover": "Classic-cover.png"
     },
 
     {
@@ -40,7 +43,8 @@
         "precio": 16.99,
         "stock": 30,
         "img": "marinara.jpg",
-        "ingredients": "Such a Typical Italian Meal can't be missing! Try our homemade Marinara sauce with the Choice of Pasta to your Preference!"
+        "ingredients": "Such a Typical Italian Meal can't be missing! Try our homemade Marinara sauce with the Choice of Pasta to your Preference!",
+        "cover": "Classic-cover.png"
     },
 
     {
@@ -51,7 +55,8 @@
         "precio": 18.99,
         "stock": 40,
         "img": "Fettuccine-Alfredo-2.jpg",
-        "ingredients": "Fettuccine Pasta with our Creamy Alfredo Sauce!"
+        "ingredients": "Fettuccine Pasta with our Creamy Alfredo Sauce!",
+        "cover": "Tour-cover.png"
     },
 
     {
@@ -62,7 +67,8 @@
         "precio": 20.99,
         "stock": 40,
         "img": "Fettuccine-Carb.jpg",
-        "ingredients": "Sauteed onions in our Creamy bechamel sauce mixed with bacon over Fettuccine Pasta."
+        "ingredients": "Sauteed onions in our Creamy bechamel sauce mixed with bacon over Fettuccine Pasta.",
+        "cover": "Tour-cover.png"
     },
 
     {
@@ -73,7 +79,8 @@
         "precio": 22.99,
         "stock": 35,
         "img": "Baked-rigatoni.jpg",
-        "ingredients": "Rigatoni with Meatsauce topped with fresh mozzarella cheese baked in the Oven"
+        "ingredients": "Rigatoni with Meatsauce topped with fresh mozzarella cheese baked in the Oven",
+        "cover": "Tour-cover.png"
     },
 
     {
@@ -84,7 +91,8 @@
         "precio": 23.50,
         "stock": 40,
         "img": "specialty-homemade.jpg",
-        "ingredients": "Sausage sauteed in Olive Oil, bell peppers and onions in marinara sauce with Rigatoni and topped with melted mozarella cheese."
+        "ingredients": "Sausage sauteed in Olive Oil, bell peppers and onions in marinara sauce with Rigatoni and topped with melted mozarella cheese.",
+        "cover": "Tour-cover.png"
     },
 
     {
@@ -95,8 +103,8 @@
         "precio": 20.99,
         "stock": 40,
         "img": "Pasta-AllaVodka.jpg",
-        "ingredients": "Sauteed shallots flamed with vodka in a creamy pink sauce. Served with the choice of pasta of your preference."
-
+        "ingredients": "Sauteed shallots flamed with vodka in a creamy pink sauce. Served with the choice of pasta of your preference.",
+        "cover": "Tour-cover.png"
     },
 
     {
@@ -107,7 +115,8 @@
         "precio": 34.99,
         "stock": 37,
         "img": "pork-osso-bucco.jpg",
-        "ingredients": "Slow braised Pork Osso Bucco served over truffle mushroom risotto"
+        "ingredients": "Slow braised Pork Osso Bucco served over truffle mushroom risotto",
+        "cover": "Grill-cover.png"
     },
 
     {
@@ -118,7 +127,8 @@
         "precio": 37.99,
         "stock": 42,
         "img": "Salmon-grill.jpg",
-        "ingredients": "Fresh salmon delicately grill with herbs and extra virgin olive oil. Served over dill sauce."
+        "ingredients": "Fresh salmon delicately grill with herbs and extra virgin olive oil. Served over dill sauce.",
+        "cover": "Grill-cover.png"
     },
 
     {
@@ -129,7 +139,8 @@
         "precio": 30.50,
         "stock": 37,
         "img": "strips-of-sirloin.jpg",
-        "ingredients": "A thick cut of mouthwatering steak cooked to perfection. Served with Roasted Potatoes and Mixed Vegetables."
+        "ingredients": "A thick cut of mouthwatering steak cooked to perfection. Served with Roasted Potatoes and Mixed Vegetables.",
+        "cover": "Grill-cover.png"
     },
 
     {
@@ -140,7 +151,8 @@
         "precio": 32.99,
         "stock": 45,
         "img": "Spicy-shrimp-rigatoni.jpg",
-        "ingredients": "Sauteed shrimp served with rigatoni in a roasted pepper sauce with a hint of spice and herbs."
+        "ingredients": "Sauteed shrimp served with rigatoni in a roasted pepper sauce with a hint of spice and herbs.",
+        "cover": "Seafood-cover.png"
     },
 
     {
@@ -151,7 +163,8 @@
         "precio": 35.99,
         "stock": 40,
         "img": "frutti-di-mare.jpg",
-        "ingredients": "Sauteed shrimp, clams, calamari, mussels in a fresh garlic lemon-butter-sauce or Red sauce. Served over spaghetti."
+        "ingredients": "Sauteed shrimp, clams, calamari, mussels in a fresh garlic lemon-butter-sauce or Red sauce. Served over spaghetti.",
+        "cover": "Seafood-cover.png"
     },
 
     {
@@ -162,7 +175,8 @@
         "precio": 36.99,
         "stock": 45,
         "img": "shrimp-risotto.jpg",
-        "ingredients": "Sauteed shrimp and salmon with our special white wine sauce and a glaze of aged balsamic."
+        "ingredients": "Sauteed shrimp and salmon with our special white wine sauce and a glaze of aged balsamic.",
+        "cover": "Seafood-cover.png"
     },
 
     {
@@ -173,7 +187,8 @@
         "precio": 32.99,
         "stock": 30,
         "img": "spa-alla-Vongole.jpg",
-        "ingredients": "Clams sauteed in extra virgin olive oil and garlic, finished with our white wine sauce."
+        "ingredients": "Clams sauteed in extra virgin olive oil and garlic, finished with our white wine sauce.",
+        "cover": "Seafood-cover.png"
     },
 
     {
@@ -184,7 +199,8 @@
         "precio": 15.99,
         "stock": 22,
         "img": "Fettuccine-Alfredo-2.jpg",
-        "ingredients": "Fettuccine Pasta with our Creamy Alfredo Sauce!"
+        "ingredients": "Fettuccine Pasta with our Creamy Alfredo Sauce!",
+        "cover": "Kids-cover.png"
     },
 
     {
@@ -195,7 +211,8 @@
         "precio": 12.99,
         "stock": 22,
         "img": "kids-mb.jpg",
-        "ingredients": "Such a Typical Italian Meal can't be missing! Try our homemade Marinara sauce with Meatballs on it."
+        "ingredients": "Such a Typical Italian Meal can't be missing! Try our homemade Marinara sauce with Meatballs on it.",
+        "cover": "Kids-cover.png"
     },
 
     {
@@ -206,7 +223,8 @@
         "precio": 12.99,
         "stock": 27,
         "img": "chx-fries-kids.jpg",
-        "ingredients": "Fried chicken fingers served with french fries. Kids size"
+        "ingredients": "Fried chicken fingers served with french fries. Kids size",
+        "cover": "Kids-cover.png"
     },
 
     {
@@ -217,7 +235,8 @@
         "precio": 10.99,
         "stock": 15,
         "img": "cannoli.jpg",
-        "ingredients": "Stuffed crunchy cannoli with our homemade whipped cream glaze with chocolate Syrup"
+        "ingredients": "Stuffed crunchy cannoli with our homemade whipped cream glaze with chocolate Syrup",
+        "cover": "Desserts-cover.png"
     },
 
     {
@@ -228,7 +247,8 @@
         "precio": 10.99,
         "stock": 15,
         "img": "creme-brulee.jpg",
-        "ingredients": "Custard topped with caramelized sugar."
+        "ingredients": "Custard topped with caramelized sugar.",
+        "cover": "Desserts-cover.png"
     },
 
     {
@@ -239,7 +259,8 @@
         "precio": 12.99,
         "stock": 15,
         "img": "chocolate-mousecake.jpg",
-        "ingredients": "For all of our chocolate lovers! Try our homemade Triple Chocolate Mousecake"
+        "ingredients": "For all of our chocolate lovers! Try our homemade Triple Chocolate Mousecake",
+        "cover": "Desserts-cover.png"
     },
 
     {
@@ -250,7 +271,8 @@
         "precio": 10.99,
         "stock": 15,
         "img": "tiramisu.jpg",
-        "ingredients": "Layers of sponge cake soaked in coffee and brandy or liqueur with powdered chocolate and mascarpone cheese"
+        "ingredients": "Layers of sponge cake soaked in coffee and brandy or liqueur with powdered chocolate and mascarpone cheese",
+        "cover": "Desserts-cover.png"
     },
 
     {
@@ -261,7 +283,8 @@
         "precio": 10.99,
         "stock": 15,
         "img": "cheesecake.jpg",
-        "ingredients": "Rich dessert cake made with cream and soft cheese on a graham cracker, cookie, or pastry crust, typically topped with a fruit sauce."
+        "ingredients": "Rich dessert cake made with cream and soft cheese on a graham cracker, cookie, or pastry crust, typically topped with a fruit sauce.",
+        "cover": "Desserts-cover.png"
     }
 
 ]

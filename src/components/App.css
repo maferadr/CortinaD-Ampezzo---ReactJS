@@ -16,7 +16,7 @@
     margin: 0;
 }
 
-.col-md-6{
+.col-detail{
     width: 45%;
     justify-content: center;
     margin-left: 3%;
@@ -40,3 +40,50 @@ button{
 Link{
     text-decoration: none;
 }
+
+.bg-card{
+    background: linear-gradient(rgba(35, 40, 44, 0.668), white);
+    
+}
+
+.p-4{
+    border-radius: 21px 21px 0 0;
+    width: 85%;
+    height: 300;
+    margin-left: 8%;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-header{
+    color: black;
+    font-family: 'Gloock', serif;
+    justify-content: center;
+    align-items: center;
+    padding-left: 28%;
+    padding-top: 2rem;
+}
+
+.lead{
+    color: black;
+    font-weight: bold;
+    font-family: 'Gloock', serif;
+    justify-content: center;
+}
+
+.card-main{
+    justify-content: center;
+    align-items: center;
+}
+
+.display-5{
+    font-family: 'Lateef', serif;
+}
+
+.lead{
+    font-family: 'Gloock', serif;
+    font-size: 1.5rem;
+}
+
+

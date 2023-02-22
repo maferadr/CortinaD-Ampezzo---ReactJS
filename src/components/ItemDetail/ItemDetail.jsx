@@ -3,8 +3,8 @@ import { ItemCount } from "../ItemCount/ItemCount"
 export const ItemDetail = ({item}) =>{
 return (
 <div>
-<div className="row mb-2">
-  <div className="col-md-6">
+<div className="pt-4 row mb-2">
+  <div className="col-detail col-md-6">
     <div className="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <img className="col-auto d-none d-lg-block" 
         preserveAspectRatio="xMidYMid slice"
@@ -13,7 +13,7 @@ return (
      
     </div>
   </div>
-  <div className="col-md-6">
+  <div className="col-detail col-md-6">
     <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
       <div className="col p-4 d-flex flex-column position-static">
         <strong className="d-inline-block mb-2 text-success">{item.menuType}</strong>
