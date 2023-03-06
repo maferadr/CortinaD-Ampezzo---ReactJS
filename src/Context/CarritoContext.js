@@ -13,22 +13,17 @@ export const CarritoProvider = (props) => {
     }
 
     //Add items
-    const addItem = (producto, cantidad) => {
-        if(isInCart(producto.id)) {
-            const indice = carrito.findIndex(meal => meal.id === producto.id)
+    const addItem = (menu, cantidad) => {
+        if(isInCart(menu.id)) {
+            const indice = carrito.findIndex(meal => meal.id === menu.id)
             const aux = [...carrito]
             aux[indice].cant = cantidad
             setCarrito(aux)
         } else { 
             const prodCart ={
-                ...producto, 
+                ...menu, 
                 cant: cantidad
             }
-            /*
-                const aux = [...carrito]
-                aux.push(prodCart)
-                setCarrito(aux)
-            */
             setCarrito([...carrito, prodCart])
 
         }
@@ -46,7 +41,7 @@ export const CarritoProvider = (props) => {
 
     // Purchase: (precio total de la compra)
     const totalPrice = () =>{
-        return carrito.reduce((acum, meal) => acum += (meal.cant * meal.precio))
+        return carrito.reduce((acum, meal) => acum += (meal.cant * meal.precio), 0)
     }
 
     // Empty Cart

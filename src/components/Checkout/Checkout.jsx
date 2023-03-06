@@ -1,27 +1,58 @@
 import React from "react"
+import { useCarritoContext } from "../../Context/CarritoContext"
+import { Link } from "react-router-dom"
+import { createOrdenDeCompra, getOrdenCompra, getProducto, updateProducto} from "../../Firebase/firebase"
+import {toast} from 'react-toastify'
+import { useNavigate } from "react-router-dom"
 
 
 export const Checkout = () =>{
-return (
-<div>
-    <div className="productosCheck">
-    <div className="col pt-4 pb-4" style={{width: "30%"}}>
-            <div className="card mb-3 cardProducto shadow-sm">
-            <img className="bd-placeholder-img card-img-top" 
-            style={{height: 350}}
-            src={`../img/pasta-bolognese.jpg`}></img>
-            {/* <div className="card-body">
-                <h3 className="cardTitle">{item.nombre}</h3>
-                <p className="card-text">{item.menuType}</p>
-                <p className="card-text">${new Intl.NumberFormat('de-DE').format(item.precio)}</p>
-                <button type="button" className="btn btn-dark"><Link className="nav-link" to={`/item/${item.id}`}>See details</Link></button>
-            </div> */}
-            </div>
-        </div>
-    </div>
-        
+  const {carrito, emptyCart, totalPrice} = useCarritoContext()
+  const datosFormulario = React.useRef()
+  let navigate = useNavigate()
 
-        <form className="formulario border-top pt-4 mb-3 text-center">
+  const consultarShoppingCart = (e) =>{
+    e.preventDefault()
+    const datForm = new FormData(datosFormulario.current)
+    const cliente = Object.fromEntries(datForm)
+
+    const aux = [...carrito]
+
+    aux.forEach(mealCarrito =>{
+      getProducto(mealCarrito.id).then(mealDB =>{
+        mealDB.stock -= mealCarrito.cant
+        updateProducto(mealCarrito.id, mealDB)
+      })
+    })
+
+    createOrdenDeCompra(aux, cliente, totalPrice(), new Date().toISOString()).then(ordenCompra=>{
+
+    toast.success(`Your Payment has been submitted! Get your tracking number: ${ordenCompra.id} for updates`)
+    emptyCart()
+    e.target.reset()
+    navigate("/")
+  })
+  }
+
+  datosFormulario.length === 0 && toast.error(`This field is required`)
+  
+
+
+return (
+<>
+
+  {carrito.length === 0 
+  ?
+  <>
+          <div className="cover-container" style={{backgroundImage: 'url(https://firebasestorage.googleapis.com/v0/b/react-39530-maria.appspot.com/o/chef.webp?alt=media&token=338c2d87-53fb-442b-b7b8-2505647033f8)'}}>
+            <h2 className="cover-cart">Your bag is Empty</h2>
+            <Link className="button-cart nav-link" to={"/"}><button className="btn btn-success">Continue Shopping</button></Link>
+        </div>
+  </>
+  :
+  <>
+      
+        <form onSubmit={consultarShoppingCart} ref={datosFormulario} className="productosCheck formulario border-top pt-4 mb-3 text-center">
   <img className="cart-icon mb-4" src={`https://firebasestorage.googleapis.com/v0/b/react-39530-maria.appspot.com/o/cart-icon.png?alt=media&token=48ae3f95-85a0-4481-af1c-2a3c66ad86cd`} alt="" width={72} height={57}
   />
   <h1 className="h3 mb-3 fw-normal">CheckOut Form</h1>
@@ -61,7 +92,11 @@ return (
   </button>
 </form>
 
+  </>
 
-</div>
+  }
+    
+
+</>
 )
 }

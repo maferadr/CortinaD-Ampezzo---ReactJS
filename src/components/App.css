@@ -21,6 +21,21 @@
     animation-duration: 2s;
 }
 
+.cover-cart{
+    justify-content: center;
+    align-items: center;
+    padding-left: 40%;
+    padding-top: 20%;
+    font-family: 'Lobster Two', cursive;
+    font-size: 3rem;
+    color: white;
+}
+
+.button-cart{
+    padding-left: 45%;
+    justify-content: center;
+}
+
 .nav-item{
     padding-right: 1rem;
 }
@@ -181,5 +196,4 @@ form{
     background-size: cover;
     border-radius: 30px 30px 30px 30px;
 }
-
 

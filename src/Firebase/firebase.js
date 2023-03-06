@@ -56,3 +56,22 @@ export const deleteProducto = async (id) =>{
     await deleteDoc(doc(db, "meals", id))
 }
 
+//Funcion Orden de Compra
+
+export const createOrdenDeCompra = async (meals, precioTotal, fecha) =>{
+    const ordenCompra = await addDoc(collection(db, "ordenCompra"),{
+        meals: meals,
+        precioTotal: precioTotal,
+        fecha: fecha
+    })
+    return ordenCompra
+}
+
+export const getOrdenCompra = async(id) =>{
+    const ordenCompra = await getDoc(doc(db, "ordenCompra", id))
+    const compra = {...ordenCompra.data(), id: ordenCompra.id}
+    return compra
+}
+
+
+

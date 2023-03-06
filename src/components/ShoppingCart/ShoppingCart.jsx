@@ -7,14 +7,12 @@ const ShoppingCart = () =>{
   const {getItemQuantity} = useCarritoContext()
     return(
        <div className="text-end">
-        <button type="button" className="btn btn-outline-light me-2 dropdown-toggle" data-bs-toggle="dropdown">
-         <ul className="dropdown-menu">
-            <Link className="nav-link" to={'/Cart'}><li className="dropdown-item">See Items</li></Link>
-            <Link className="nav-link" to={'/Checkout'}><li className="dropdown-item">Checkout</li></Link>
-          </ul>
+        <Link className="nav-link" to={'/Cart'}>
+        <button className="btn btn-warning">
           Cart
           {getItemQuantity() > 0 && <span className="cantCarrito badge text-bg-secondary">{getItemQuantity()}</span>}
         </button>
+        </Link>
       </div>
     )
 }
