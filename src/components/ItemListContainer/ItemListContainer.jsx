@@ -3,27 +3,26 @@ import { useParams } from "react-router-dom"
 import { ItemList } from "../ItemList/ItemList"
 import { Header } from "../Item/Header"
 
+import { getProductos } from "../../Firebase/firebase"
+
 export const ItemListContainer = () =>{
     const [meals, setMeals] = useState([])
+    const [title, setTitle] = useState("Todos los platos")
     const {idCategoria}= useParams()
 
     useEffect(() =>{
         if (idCategoria){
-            fetch('../json/meals.json')
-            .then(response => response.json())
+            getProductos()
             .then(items =>{
                 const menu = items.filter(men => men.idCategoria === parseInt(idCategoria))
-                const menuList = ItemList({menu})
-                console.log(menuList)
+                const menuList = <ItemList menu={menu} plantilla={'item'}/>
                 setMeals(menuList)
+                setTitle(menu[0].menuType)
         })
         }else{
-            fetch('./json/meals.json')
-            .then(response => response.json())
+            getProductos()
             .then(menu =>{
-            console.log(menu)
-            const menuList = ItemList({menu})
-            console.log(menuList)
+            const menuList = <ItemList menu={menu} plantilla={'item'}/>
             setMeals(menuList)
         })
         }
@@ -33,13 +32,12 @@ export const ItemListContainer = () =>{
 return (
 <>
     <main>
-
-    <header className="py-5 border-bottom">
-       <Header menu={meals}/>
+    <header>
+       <Header menu={title}/>
     </header>
     
    
-    <div className="album bg-light">
+    <div className="album">
         <div className="container">
         <div className="row cardProducto row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {meals}

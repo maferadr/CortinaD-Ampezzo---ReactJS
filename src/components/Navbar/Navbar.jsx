@@ -19,14 +19,7 @@ const Navbar = () =>{
           aria-label="Search"
         />
       </form>
-      <div className="text-end">
-        <button type="button" className="btn btn-outline-light me-2 dropdown-toggle" data-bs-toggle="dropdown">
-        <ShoppingCart/>
-          Cart 
-           <span class="badge text-bg-secondary">4</span>
-        </button>
-        <ShoppingCart/>
-      </div>
+      <ShoppingCart/>
     </div>
   </div>
 </header>

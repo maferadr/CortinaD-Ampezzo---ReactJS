@@ -1,9 +1,16 @@
-import { Item } from "../Item/Item"
+import { Item } from "../Item/Item";
+import { ItemCart } from "../ItemCart/ItemCart";
 
-export const ItemList = ({menu}) =>{
+export const ItemList = ({menu, plantilla}) =>{
 return (
     <>
-        {menu.map(meal => <Item item={meal} key={meal.id}/>)}
+    {
+        plantilla === 'item'
+        ?
+        menu.map(meal => <Item item={meal} key={meal.id}/>)
+        :
+        menu.map(meal => <ItemCart item={meal} key={meal.id}/>)
+    }
     </>
 )
 }

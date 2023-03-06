@@ -3,11 +3,11 @@ import { Link } from "react-router-dom"
 export const Item = ({item}) =>{
 return (
     <>
-        <div className="col">
+        <div className="col pt-4">
             <div className="card mb-3 cardProducto shadow-sm">
             <img className="bd-placeholder-img card-img-top" 
             style={{ width: "100%", height: 350}}
-            src={`../img/${item.img}`}></img>
+            src={item.img}></img>
             <div className="card-body">
                 <h3 className="cardTitle">{item.nombre}</h3>
                 <p className="card-text">{item.menuType}</p>

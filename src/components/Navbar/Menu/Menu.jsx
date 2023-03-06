@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const Menu = () =>{
+const Menu = React.memo(() =>{
     return(
         <>
         <li className="nav-item"><Link className="nav-link px-2 text-secondary" to={"/"}>Home</Link></li>
@@ -13,6 +13,6 @@ const Menu = () =>{
         <li className="nav-item"><Link className="nav-link px-2 text-white" to={"/menu/6"}>Desserts</Link></li>
     </>
     )
-   }
+   })
 
 export default Menu

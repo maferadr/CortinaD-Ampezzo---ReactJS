@@ -1,6 +1,14 @@
 import { ItemCount } from "../ItemCount/ItemCount"
+import { useCarritoContext } from "../../Context/CarritoContext"
 
 export const ItemDetail = ({item}) =>{
+
+  const {addItem} = useCarritoContext()
+
+  const onAdd = (cantidad) =>{
+    addItem(item, cantidad)
+  }
+
 return (
 <div>
 <div className="pt-4 row mb-2">
@@ -9,7 +17,7 @@ return (
         <img className="col-auto d-none d-lg-block" 
         preserveAspectRatio="xMidYMid slice"
         focusable="false"
-        src={`../img/${item.img}`}></img>
+        src={item.img}></img>
      
     </div>
   </div>
@@ -20,8 +28,7 @@ return (
         <h3 className="mb-0">{item.nombre}</h3>
         <div className="mb-1 text-muted">${new Intl.NumberFormat('de-DE').format(item.precio)}</div>
         <p className="mb-auto">{item.ingredients}</p>
-        <ItemCount inicialValue={1} stock={item.stock}/>
-        <button type="button" className="btn btn-success">Add to Cart</button>
+        <ItemCount inicialValue={1} stock={item.stock} onAdd={onAdd}/>
       </div>
     </div>
   </div>
